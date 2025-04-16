@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU-Africa GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>USIU-Africa Student GPA Calculator</h1>
+            <p>Enter your course details below to calculate your GPA</p>
+        </header>
+
+        <main>
+            <form id="gpa-form">
+                <div id="courses-container">
+                    <!-- Initial course rows will be created here -->
+                </div>
+
+                <div class="buttons-container">
+                    <button type="button" id="add-course-btn">Add Another Course</button>
+                    <button type="button" id="calculate-btn">Calculate GPA</button>
+                </div>
+            </form>
+
+            <section id="results-section" class="hidden">
+                <h2>Your Calculated GPA</h2>
+                <div id="gpa-result" class="result-display">
+                    <!-- GPA result will appear here -->
+                </div>
+                <p id="courses-summary"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>This is an estimation tool. Official GPA may vary.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
